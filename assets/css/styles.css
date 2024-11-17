@@ -1,143 +1,4 @@
-/* Flamenco Fonts */
-@font-face {
-  font-family: "FlamencoLight";
-  src: url("../fonts/Flamenco-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "FlamencoRegular";
-  src: url("../fonts/Flamenco-Regular.ttf") format("truetype");
-}
-
-/* Major Mono Display Fonts */
-@font-face {
-  font-family: "MajorMonoDisplay";
-  src: url("../fonts/MajorMonoDisplay-Regular.ttf") format("truetype");
-}
-
-/* Megrim Font */
-@font-face {
-  font-family: "Megrim";
-  src: url("../fonts/Megrim-Regular.ttf") format("truetype");
-}
-
-/* Monsieur La Doulaise Font */
-@font-face {
-  font-family: "MonsieurLaDoulaise";
-  src: url("../fonts/MonsieurLaDoulaise-Regular.ttf") format("truetype");
-}
-
-/* Museo Moderno Fonts */
-@font-face {
-  font-family: "MuseoModernoBlack";
-  src: url("../fonts/MuseoModerno-Black.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoBlackItalic";
-  src: url("../fonts/MuseoModerno-BlackItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoBold";
-  src: url("../fonts/MuseoModerno-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoBoldItalic";
-  src: url("../fonts/MuseoModerno-BoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoExtraBold";
-  src: url("../fonts/MuseoModerno-ExtraBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoExtraBoldItalic";
-  src: url("../fonts/MuseoModerno-ExtraBoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoExtraLight";
-  src: url("../fonts/MuseoModerno-ExtraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoExtraLightItalic";
-  src: url("../fonts/MuseoModerno-ExtraLightItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoItalic";
-  src: url("../fonts/MuseoModerno-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoLight";
-  src: url("../fonts/MuseoModerno-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoLightItalic";
-  src: url("../fonts/MuseoModerno-LightItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoMedium";
-  src: url("../fonts/MuseoModerno-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoMediumItalic";
-  src: url("../fonts/MuseoModerno-MediumItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoRegular";
-  src: url("../fonts/MuseoModerno-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoSemiBold";
-  src: url("../fonts/MuseoModerno-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoSemiBoldItalic";
-  src: url("../fonts/MuseoModerno-SemiBoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoThin";
-  src: url("../fonts/MuseoModerno-Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoThinItalic";
-  src: url("../fonts/MuseoModerno-ThinItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoModernoVariable";
-  src: url("../fonts/MuseoModerno-VariableFont_wght.ttf") format("truetype");
-}
-
-/* Sankofa Display Font */
-@font-face {
-  font-family: "SankofaDisplay";
-  src: url("../fonts/SankofaDisplay-Regular.ttf") format("truetype");
-}
-
-/* Varta Fonts */
-@font-face {
-  font-family: "VartaBold";
-  src: url("../fonts/Varta-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VartaLight";
-  src: url("../fonts/Varta-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VartaMedium";
-  src: url("../fonts/Varta-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VartaRegular";
-  src: url("../fonts/Varta-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VartaSemiBold";
-  src: url("../fonts/Varta-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "VartaVariable";
-  src: url("../fonts/Varta-VariableFont_wght.ttf") format("truetype");
-}
-
 * {
-  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -149,18 +10,47 @@ body {
 }
 
 body {
-  height: 100%;
   scroll-behavior: smooth;
-  background-color: gray;
+  background-color: black;
   color: white;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: max-content;
+  height: max-content;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 10px 20px;
+  z-index: 2000;
+}
+.sidebar :hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 1rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #81dee6;
 }
 
 /* Full height carousel setup */
 
 .carousel-container {
   position: relative;
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -172,21 +62,21 @@ body {
 .carousel-title,
 .carousel-titleA {
   position: absolute;
-  top: 100%;
+  top: 68%;
   left: 50%;
   bottom: 0;
   right: 0;
   transform: translate(-50%, -50%);
   font-family: "Megrim";
   font-size: 5rem;
-  color: #fff;
+  color: rgb(45, 77, 88);
   text-align: center;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.8);
   padding: 5px 10px;
   z-index: 20;
 }
 .carousel-titleA {
-  top: 110%;
+  top: 74%;
   font-size: 2rem;
 }
 
@@ -196,12 +86,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Ensures the container's height is full viewport height */
-  background-size: cover; /* Covers the entire container, may crop if aspect ratios do not match */
-  background-position: center top; /* Centers the image to ensure best parts are likely visible */
-  background-repeat: no-repeat; /* No repeating of the image */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.6s ease-in-out; /* Smooth fade transition */
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
 
 /* Active carousel item (visible image) */
@@ -214,25 +104,27 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
   z-index: 100;
   outline: none;
+  width: 45%;
+  height: 100%;
 }
 
 button:active {
-  background-color: rgba(0, 0, 0, 0.5); /* Even darker when clicked */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #prev {
-  left: 20px;
+  left: 1px;
 }
 
 #next {
-  right: 20px;
+  right: 1px;
 }
 
 .section {
@@ -273,14 +165,13 @@ form button {
 @media (max-width: 768px) {
   .carousel-title,
   .carousel-titleA {
-    font-size: 3rem; /* Smaller font size for medium screens */
-    padding: 3px 7px; /* Adjust padding to be proportionate */
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Slightly lighter shadow */
+    font-size: 3rem;
+    padding: 3px 7px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   }
 
   .carousel-titleA {
-    font-size: 2.5rem; /* Even smaller for variant A */
-    top: 105%; /* Adjust positioning if necessary */
+    font-size: 2rem;
   }
 }
 
@@ -288,13 +179,12 @@ form button {
 @media (max-width: 480px) {
   .carousel-title,
   .carousel-titleA {
-    font-size: 2rem; /* Smaller font size for small screens */
-    padding: 2px 5px; /* Smaller padding */
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7); /* Lightest shadow for readability */
+    font-size: 2rem;
+    padding: 2px 5px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
   }
 
   .carousel-titleA {
-    font-size: 1.5rem; /* Smallest for variant A */
-    top: 110%; /* Adjust top to better fit mobile screens */
+    font-size: 1.5rem;
   }
 }
