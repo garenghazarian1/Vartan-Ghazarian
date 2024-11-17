@@ -1,3 +1,14 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --sidebar-hover-bg: rgba(51, 51, 51, 0.2);
+  --link-hover-color: #81dee6;
+  --carousel-title-color: rgb(45, 77, 88);
+  --button-active-bg: rgba(174, 231, 223, 0.5);
+  --form-button-bg: teal;
+  --text-shadow-color: rgba(0, 0, 0, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,42 +22,40 @@ body {
 
 body {
   scroll-behavior: smooth;
-  background-color: black;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-/* sidebar */
-
+/* Sidebar */
 .sidebar {
   width: max-content;
   height: max-content;
   position: fixed;
   left: 0;
   top: 0;
-  color: white;
+  color: var(--text-color);
   padding: 10px 20px;
   z-index: 2000;
 }
 .sidebar :hover {
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: var(--sidebar-hover-bg);
   border-radius: 1rem;
 }
 
 .sidebar a {
   display: block;
   padding: 1rem;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .sidebar a:hover {
-  color: #81dee6;
+  color: var(--link-hover-color);
 }
 
 /* Full height carousel setup */
-
 .carousel-container {
   position: relative;
   height: 100vh;
@@ -69,15 +78,18 @@ body {
   transform: translate(-50%, -50%);
   font-family: "Megrim";
   font-size: 5rem;
-  color: rgb(45, 77, 88);
+  color: var(--carousel-title-color);
   text-align: center;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 4px 6px var(--text-shadow-color);
   padding: 5px 10px;
   z-index: 20;
 }
 .carousel-titleA {
   top: 74%;
   font-size: 2rem;
+  color: var(
+    --text-color
+  ); /* Use text color or a specific variable if different */
 }
 
 /* Each carousel item will serve as a background */
@@ -105,7 +117,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: var(--text-color);
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -116,7 +128,7 @@ button {
 }
 
 button:active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--button-active-bg);
 }
 
 #prev {
@@ -153,38 +165,8 @@ form textarea {
 
 form button {
   padding: 10px 20px;
-  background-color: teal;
-  color: white;
+  background-color: var(--form-button-bg);
+  color: var(--text-color);
   border: none;
   cursor: pointer;
-}
-
-/* Base styles are for larger screens as you've defined */
-
-/* Medium screens (tablets, large phones e.g., iPads, iPad Pros) */
-@media (max-width: 768px) {
-  .carousel-title,
-  .carousel-titleA {
-    font-size: 3rem;
-    padding: 3px 7px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-  }
-
-  .carousel-titleA {
-    font-size: 2rem;
-  }
-}
-
-/* Small screens (smaller tablets and mobile phones) */
-@media (max-width: 480px) {
-  .carousel-title,
-  .carousel-titleA {
-    font-size: 2rem;
-    padding: 2px 5px;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .carousel-titleA {
-    font-size: 1.5rem;
-  }
 }
