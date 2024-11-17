@@ -3,6 +3,6 @@ import { loadVideoSection } from "./youtube.js";
 
 initializeCarousel();
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadVideoSection();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   loadVideoSection();
+// });
