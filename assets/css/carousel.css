@@ -13,11 +13,11 @@
 .carousel-title,
 .carousel-titleA {
   position: absolute;
-  top: 68%; /* Adjusted for visual balance */
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Megrim";
-  font-size: 5rem; /* Large font for visibility */
+  font-size: 5rem;
   color: var(--carousel-title-color);
   text-align: center;
   text-shadow: 2px 4px 6px var(--text-shadow-color);
@@ -26,7 +26,7 @@
 }
 
 .carousel-titleA {
-  top: 74%; /* Slight vertical adjustment for subtitle */
+  top: 74%;
   font-size: 2rem;
   color: var(--text-color);
 }
@@ -79,12 +79,12 @@ button:active {
 @media (max-width: 768px), (max-width: 480px) {
   .carousel-title,
   .carousel-titleA {
-    font-size: 4rem; /* Slightly smaller to fit smaller screens */
+    font-size: 4rem;
     padding: 3px 7px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Lighter shadow for less screen real estate */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   }
 
   .carousel-titleA {
-    font-size: 1.5rem; /* Smaller subtitle font */
+    font-size: 1.5rem;
   }
 }

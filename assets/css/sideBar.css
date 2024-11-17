@@ -1,7 +1,7 @@
 .sidebar {
   width: max-content;
   height: max-content;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   color: var(--text-color);
@@ -20,6 +20,7 @@
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
+  border-bottom: 1px solid var(--under-line-text);
 }
 
 .sidebar a:hover {
