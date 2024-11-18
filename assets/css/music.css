@@ -27,6 +27,12 @@
   padding: 4rem;
 }
 
+.musicTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px var(--text-shadow-color);
+}
+
 @media (max-width: 768px) {
   .audioTitle {
     font-size: 2rem;
