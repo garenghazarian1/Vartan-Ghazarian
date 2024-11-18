@@ -1,0 +1,40 @@
+.audioSection {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.803);
+}
+
+.audioContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 1;
+}
+
+.audioTitle {
+  font-family: "MuseoModernoBold", Arial, sans-serif;
+  color: var(--carousel-title-color);
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px var(--text-shadow-color);
+  z-index: 1;
+  padding: 4rem;
+}
+
+@media (max-width: 768px) {
+  .audioTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .audioTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="./assets/css/sideBar.css" />
     <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/youtube.css" />
+    <link rel="stylesheet" href="./assets/css/music.css" />
   </head>
   <body>
+    <!-- Nav Bar -->
     <nav class="sidebar">
       <a href="#">Home</a>
       <a href="#videoSection">YouTube</a>
-      <a href="#about">About</a>
+      <a href="#audio">Music</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <!-- Fullscreen Carousel -->
     <section id="carousel" class="carousel-container">
       <div class="carousel-slide">
@@ -41,9 +44,10 @@
       <button id="next"></button>
     </section>
 
+    <!-- YouTube section -->
     <section class="section" id="videoSection">
       <h2 class="videoTitle">My Videos</h2>
-      <div class="video-container">
+      <div class="videoContainer">
         <iframe
           width="560"
           height="315"
@@ -98,20 +102,21 @@
     </section>
 
     <!-- <div id="videoSection"></div> -->
-    <!-- Listen to Our Music Section 
-    <section id="music" class="section">
-      <h2>Listen to Our Music</h2>
-      <div class="music-container">
+
+    <!-- Listen to Our Music Section -->
+    <section class="audioSection" id="audio">
+      <h2 class="audioTitle">Listen to Our Music</h2>
+      <div class="audioContainer">
         <audio controls>
-          <source src="song1.mp3" type="audio/mp3" />
+          <source src="./assets/audio/uresYar.mp3" type="audio/mp3" />
           Your browser does not support the audio element.
         </audio>
-        <audio controls>
+        <!-- <audio controls>
           <source src="song2.mp3" type="audio/mp3" />
           Your browser does not support the audio element.
-        </audio>
+        </audio> -->
       </div>
-    </section>-->
+    </section>
 
     <!-- About Us Section 
     <section id="about" class="section">

@@ -1,48 +1,33 @@
 .section {
   position: relative;
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.803);
 }
 
-/* .section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/Vartan2024/assets/images/006.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.7; 
-  z-index: -1;
-} 
-*/
-
-.video-container {
+.videoContainer {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  z-index: 1; /* Ensures video content is above the transparent background */
+  z-index: 1;
 }
 
-.video-container iframe {
-  width: 560px; /* Ensure these dimensions are what you desire */
-  height: 315px;
-  border: none; /* Remove default border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-  border-radius: 10px; /* Optional: adds rounded corners to your iframes */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+.videoContainer iframe {
+  max-width: 400px;
+  height: 280px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.video-container iframe:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Slightly larger and darker shadow on hover */
+.videoContainer iframe:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .videoTitle {
@@ -51,7 +36,8 @@
   text-align: center;
   font-size: 2.5rem;
   text-shadow: 1px 1px 4px var(--text-shadow-color);
-  z-index: 1; /* Ensures text appears above the background */
+  z-index: 1;
+  padding: 4rem;
 }
 
 @media (max-width: 768px) {
