@@ -1,5 +1,5 @@
 import { initializeCarousel } from "./carousel.js";
-import { loadVideoSection } from "./youtube.js";
+// import { loadVideoSection } from "./youtube.js";
 
 initializeCarousel();
 
