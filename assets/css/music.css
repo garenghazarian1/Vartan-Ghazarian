@@ -13,7 +13,18 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 4rem;
+  z-index: 1;
+}
+
+.audioContainerA {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   z-index: 1;
 }
 
@@ -29,7 +40,7 @@
 
 .musicTitle {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 4px var(--text-shadow-color);
 }
 
@@ -37,10 +48,16 @@
   .audioTitle {
     font-size: 2rem;
   }
+  .audioContainer {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .audioTitle {
     font-size: 1.5rem;
+  }
+  .audioContainer {
+    gap: 1.5rem;
   }
 }
