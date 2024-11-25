@@ -1,13 +1,20 @@
 :root {
-  --background-color: black;
-  --text-color: white;
-  --sidebar-hover-bg: rgba(51, 51, 51, 0.2);
-  --link-hover-color: #81dee6;
-  --carousel-title-color: rgb(45, 77, 88);
-  --button-active-bg: rgba(174, 231, 223, 0.5);
-  --form-button-bg: teal;
-  --text-shadow-color: rgba(0, 0, 0, 0.8);
-  --under-line-text: gray;
-  --background-pageA: rgba(255, 255, 255, 0.803);
-  --background-pageB: rgba(178, 237, 232, 0.803);
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --sidebar-hover-bg: #33333333;
+  --link-hover-color: #00c8ff;
+  --carousel-title-color: #2d4d58;
+  --button-active-bg: #aee7df80;
+  --form-button-bg: #008080;
+  --text-shadow-color: #000000cc;
+  --under-line-text: #c0c0c0;
+  --background-pageB: #b2ede8;
+  --neon-blue: #0080ff;
+  --neon-pink: #ff0060;
+  --background-pageA: #121212;
+  --text-color: #ffffff;
+  --accent-color: #ff0078;
+  --carousel-title-color: #ffffff;
+  --text-shadow-color: #00000080;
+  --hover-shadow-color: #ff007880;
 }
