@@ -1,3 +1,31 @@
+.shadowTopCarousel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 30;
+}
+.shadowBottomCarousel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 30;
+}
+
 .carousel-container {
   position: relative;
   height: 100vh;
@@ -61,6 +89,7 @@ button {
   outline: none;
   width: 45%;
   height: 100%;
+  z-index: 50;
 }
 
 button:active {

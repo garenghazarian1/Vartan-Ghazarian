@@ -24,7 +24,7 @@ body {
   color: white;
   cursor: pointer;
   animation: bounce 2s infinite;
-  z-index: 30;
+  z-index: 60;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ body {
   color: white;
   cursor: pointer;
   animation: bounce 2s infinite;
-  z-index: 30;
+  z-index: 60;
   text-decoration: none;
 }
 .arrowUpAll {
@@ -64,7 +64,7 @@ body {
   color: white;
   cursor: pointer;
   animation: bounce 2s infinite;
-  z-index: 30;
+  z-index: 60;
   text-decoration: none;
 }
 /* 
