@@ -1,10 +1,17 @@
 .section {
   position: relative;
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   overflow-y: auto;
   background-color: var(--background-pageA);
   color: var(--text-color);
+}
+.videoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem; /* Adjusted shorthand for uniform padding */
 }
 
 .videoContainer {
@@ -12,45 +19,48 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 1.25rem; /* 20px */
+  padding: 1.25rem; /* 20px */
 }
 
 .videoContainer iframe {
-  max-width: 400px;
-  height: 280px;
-  border: 2px solid var(--accent-color); /* Accent border */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 25rem; /* 400px */
+  height: 17.5rem; /* 280px */
+  border: 0.125rem solid var(--accent-color); /* 2px */
+  border-radius: 0.9375rem; /* 15px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 4px 8px */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .videoContainer iframe:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 8px 16px var(--hover-shadow-color);
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem var(--hover-shadow-color); /* 8px 16px */
 }
 
 .videoTitle {
   font-family: "MuseoModernoBold", Arial, sans-serif;
   color: var(--carousel-title-color);
   text-align: center;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 4px var(--text-shadow-color);
-  margin-bottom: 2rem;
+  font-size: 2.5rem; /* maintained as rem */
+  text-shadow: 0.125rem 0.125rem 0.25rem var(--text-shadow-color); /* 2px 2px 4px */
+  margin-bottom: 2rem; /* 32px */
 }
 
 @media (max-width: 768px) {
   .videoTitle {
-    font-size: 2rem;
+    font-size: 2rem; /* 32px */
+  }
+  .videoSection {
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .videoTitle {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px */
   }
   .videoContainer iframe {
-    max-width: 90%; /* Full width on very small screens */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 90%;
+    height: auto;
   }
 }
