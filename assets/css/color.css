@@ -1,20 +1,17 @@
 :root {
-  --background-color: #121212;
-  --text-color: #ffffff;
-  --sidebar-hover-bg: #33333333;
-  --link-hover-color: #00c8ff;
-  --carousel-title-color: #2d4d58;
-  --button-active-bg: #aee7df80;
-  --form-button-bg: #008080;
-  --text-shadow-color: #000000cc;
-  --under-line-text: #c0c0c0;
-  --background-pageB: #b2ede8;
-  --neon-blue: #0080ff;
-  --neon-pink: #ff0060;
-  --background-pageA: #3d3c3c;
-  --text-color: #ffffff;
-  --accent-color: #ff0078;
-  --carousel-title-color: #ffffff;
-  --text-shadow-color: #00000080;
-  --hover-shadow-color: #ff007880;
+  --background-color: #121212; /* Deep gray for main backgrounds, optimal for dark themes */
+  --text-color: #e0e0e0; /* Soft white, improving readability against dark backgrounds */
+  --sidebar-hover-bg: #33333380; /* Semi-transparent dark gray for subtle hover effects */
+  --link-hover-color: #1da1f2; /* Vibrant light blue, enhancing visibility and user interaction */
+  --carousel-title-color: #cad2d3; /* Light slate gray for carousel titles, ensuring visibility without harsh contrast */
+  --button-active-bg: #aee7df80; /* Soft teal with transparency, for a gentle active state indication */
+  --form-button-bg: #009688; /* Teal, slightly darker, consistent for form buttons providing a good UI depth */
+  --text-shadow-color: #000000cc; /* Dark shadow for text, offering depth and emphasis */
+  --under-line-text: #747474; /* Medium gray for underlines, visible yet unobtrusive */
+  --background-pageB: #f0f0f0; /* Light gray for alternate section backgrounds, offering a clean and bright contrast */
+  --neon-blue: #0077ff; /* Bright blue for dynamic neon effects, adds vibrancy */
+  --neon-pink: #ff1177; /* Bright pink for neon accents, stands out for important UI elements */
+  --background-pageA: #2c2f33; /* Dark charcoal gray, lighter than the main background for subtle distinction in layered UI elements */
+  --accent-color: #787476; /* Bright pink for accentuating key interactive elements */
+  --hover-shadow-color: #c1bdbf80; /* Pink shadow with transparency for hover effects, aligns with the accent color */
 }

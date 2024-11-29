@@ -1,14 +1,18 @@
+:root {
+  --sidebar-width: 15.625rem; /* 250px */
+}
+
 .sidebar {
-  width: 250px; /* Fixed width for the sidebar */
-  height: 100%; /* Full height */
-  position: fixed; /* Make it stick to the left */
-  left: -250px; /* Initially hide sidebar off-screen */
+  width: var(--sidebar-width);
+  height: 100%;
+  position: fixed;
+  left: calc(-1 * var(--sidebar-width));
   top: 0;
-  background-color: #333; /* Background color of the sidebar */
+  background-color: #333;
   color: var(--text-color);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   z-index: 2000;
-  transition: left 0.3s; /* Smooth transition for sliding in and out */
+  transition: left 0.3s;
 }
 
 .sidebar.open {
@@ -16,19 +20,19 @@
 }
 
 .hamburger {
-  font-size: 30px; /* Size of the hamburger icon */
+  font-size: 1.875rem; /* 30px */
   cursor: pointer;
-  position: fixed; /* Fixed position relative to the viewport */
-  top: 10px; /* Top margin */
-  left: 10px; /* Left margin */
-  color: white; /* Icon color */
-  z-index: 2100; /* Higher than sidebar to keep it on top */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  position: fixed;
+  top: 0.625rem; /* 10px */
+  left: 0.625rem; /* 10px */
+  color: white;
+  z-index: 2100;
+  transition: opacity 0.3s ease;
 }
 
 .sidebar.open + .hamburger {
-  opacity: 0; /* Hide hamburger when sidebar is open */
-  pointer-events: none; /* Disable interactions when hidden */
+  opacity: 0;
+  pointer-events: none;
 }
 
 .sidebar a {
@@ -38,7 +42,7 @@
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease, background-color 0.3s ease;
-  border-bottom: 1px solid var(--under-line-text);
+  border-bottom: 0.0625rem solid var(--under-line-text); /* 1px */
 }
 
 .sidebar a:hover {
@@ -47,7 +51,6 @@
   border-radius: 1rem;
 }
 
-/* Additional hover effect for the whole sidebar */
 .sidebar:hover {
-  background-color: #444; /* Slightly darker on hover */
+  background-color: #444;
 }
