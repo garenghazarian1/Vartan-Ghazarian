@@ -1,16 +1,16 @@
+// Function to toggle the sidebar's visibility
 export function toggleSidebar() {
   const sidebar = document.querySelector(".sidebar");
   const hamburger = document.querySelector(".hamburger");
-  // Toggle the 'open' class on the sidebar
   sidebar.classList.toggle("open");
 
-  // Check if the sidebar is now open and adjust styles accordingly
+  // Adjust the sidebar and hamburger icon based on the sidebar's state
   if (sidebar.classList.contains("open")) {
     sidebar.style.left = "0rem"; // Move sidebar into view
     hamburger.style.opacity = "0"; // Hide hamburger icon
     hamburger.style.pointerEvents = "none"; // Disable interactions
   } else {
-    sidebar.style.left = "-15.625rem"; // Move sidebar out of view (250px/16px = 15.625rem)
+    sidebar.style.left = "-15.625rem"; // Move sidebar out of view
     hamburger.style.opacity = "1"; // Make hamburger icon visible
     hamburger.style.pointerEvents = "auto"; // Enable interactions
   }
@@ -24,4 +24,12 @@ export function closeSidebar() {
   sidebar.style.left = "-15.625rem"; // Ensure the sidebar is moved out of view
   hamburger.style.opacity = "1"; // Ensure hamburger is visible when sidebar is closed
   hamburger.style.pointerEvents = "auto"; // Ensure interactions are enabled
+}
+
+// Set up event listeners for sidebar links
+export function setupSidebarLinks() {
+  const sidebarLinks = document.querySelectorAll(".sidebar a");
+  sidebarLinks.forEach((link) => {
+    link.addEventListener("click", closeSidebar);
+  });
 }

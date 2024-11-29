@@ -2,7 +2,7 @@ import { initializeCarousel } from "./carousel.js";
 import { loadVideoSection } from "./youtubeHtml.js";
 import { loadMusicSection } from "./musicHtml.js";
 import { setupAudioPlayers } from "./audioManager.js";
-import { toggleSidebar, closeSidebar } from "./sideBar.js";
+import { toggleSidebar, closeSidebar, setupSidebarLinks } from "./sideBar.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   try {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadVideoSection();
     loadMusicSection();
     setupAudioPlayers();
-
+    setupSidebarLinks();
     const hamburger = document.querySelector(".hamburger");
 
     // Toggle sidebar on hamburger click
