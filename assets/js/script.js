@@ -1,14 +1,15 @@
 import { initializeCarousel } from "./carousel.js";
 import { loadVideoSection } from "./youtubeHtml.js";
+import { loadMusicSection } from "./musicHtml.js";
 import { setupAudioPlayers } from "./audioManager.js";
 
-initializeCarousel();
-
 document.addEventListener("DOMContentLoaded", () => {
-  loadVideoSection();
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Setup the audio players once the DOM is fully loaded
-  setupAudioPlayers();
+  try {
+    initializeCarousel();
+    loadVideoSection();
+    loadMusicSection();
+    setupAudioPlayers();
+  } catch (error) {
+    console.error("Error initializing modules:", error);
+  }
 });
