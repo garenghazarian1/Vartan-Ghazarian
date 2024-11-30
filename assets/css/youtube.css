@@ -29,7 +29,7 @@
 }
 .sectionVideo {
   position: relative;
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   overflow-y: auto;
   background-color: var(--background-pageA);
@@ -77,30 +77,35 @@
 }
 
 .videoTitle {
-  font-family: "MuseoModernoBold", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: var(--carousel-title-color);
-  text-align: center;
-  font-size: 2.5rem; /* maintained as rem */
+  font-size: 2rem; /* maintained as rem */
   text-shadow: 0.125rem 0.125rem 0.25rem var(--text-shadow-color); /* 2px 2px 4px */
-  margin: 3rem 1rem 1rem 1rem;
+  margin: 0.7rem;
 }
 
 @media (max-width: 768px) {
   .videoTitle {
-    font-size: 2rem; /* 32px */
+    font-size: 1.5rem; /* 32px */
   }
   .videoSection {
     padding: 1rem;
+  }
+  .sectionVideo {
+    max-height: 100vh;
   }
 }
 
 @media (max-width: 480px) {
   .videoTitle {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1rem; /* 24px */
   }
   .videoContainer iframe {
     max-width: 90%;
     height: auto;
+  }
+  .sectionVideo {
+    max-height: 100vh;
   }
 }
 

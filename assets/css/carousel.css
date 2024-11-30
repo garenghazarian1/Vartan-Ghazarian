@@ -23,7 +23,7 @@
     rgba(0, 0, 0, 0.5) 50%,
     rgba(0, 0, 0, 0) 100%
   );
-  z-index: 30;
+  z-index: 70;
 }
 
 .carousel-container {
@@ -87,7 +87,7 @@ button {
   cursor: pointer;
   z-index: 100;
   outline: none;
-  width: 45%;
+  width: 25%;
   height: 100%;
   z-index: 50;
 }
