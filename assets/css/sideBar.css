@@ -8,7 +8,7 @@
   position: fixed;
   left: calc(-1 * var(--sidebar-width));
   top: 0;
-  background-color: #333;
+  background-color: var(--side-bar-background);
   color: var(--text-color);
   padding: 0.625rem 1.25rem; /* 10px 20px */
   z-index: 2000;
@@ -25,7 +25,7 @@
   position: fixed;
   top: 0.625rem; /* 10px */
   left: 0.625rem; /* 10px */
-  color: white;
+  color: var(--hamburger-button);
   z-index: 2100;
   transition: opacity 0.3s ease;
 }
@@ -52,5 +52,5 @@
 }
 
 .sidebar:hover {
-  background-color: #444;
+  background-color: var(--side-bar-hover);
 }

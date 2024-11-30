@@ -1,17 +1,62 @@
+/* :root {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --sidebar-hover-bg: #33333380;
+  --link-hover-color: #1da1f2;
+  --carousel-title-color: #cad2d3;
+  --button-active-bg: #aee7df80;
+  --form-button-bg: #009688;
+  --text-shadow-color: #000000cc;
+  --under-line-text: #747474;
+  --background-pageB: #f0f0f0;
+  --neon-blue: #0077ff;
+  --neon-pink: #ff1177;
+  --background-pageA: #2c2f33;
+  --accent-color: #787476;
+  --hover-shadow-color: #c1bdbf80;
+  --side-bar-background: #333;
+  --side-bar-hover: #444;
+  --hamburger-button: white;
+} */
+
+/* :root {
+  --background-color: #0d1117;
+  --text-color: #c9d1d9;
+  --sidebar-hover-bg: #161b22;
+  --link-hover-color: #58a6ff;
+  --carousel-title-color: #8bafd2;
+  --button-active-bg: #21262d;
+  --form-button-bg: #238636;
+  --text-shadow-color: #000000;
+  --under-line-text: #30363d;
+  --background-pageB: #161b22;
+  --neon-blue: #1f6feb;
+  --neon-pink: #ff7b72;
+  --background-pageA: #0d1117;
+  --accent-color: #58a6ff;
+  --hover-shadow-color: #58a6ff80;
+  --side-bar-background: #161b22;
+  --side-bar-hover: #21262d;
+  --hamburger-button: #c9d1d9;
+} */
+
 :root {
-  --background-color: #121212; /* Deep gray for main backgrounds, optimal for dark themes */
-  --text-color: #e0e0e0; /* Soft white, improving readability against dark backgrounds */
-  --sidebar-hover-bg: #33333380; /* Semi-transparent dark gray for subtle hover effects */
-  --link-hover-color: #1da1f2; /* Vibrant light blue, enhancing visibility and user interaction */
-  --carousel-title-color: #cad2d3; /* Light slate gray for carousel titles, ensuring visibility without harsh contrast */
-  --button-active-bg: #aee7df80; /* Soft teal with transparency, for a gentle active state indication */
-  --form-button-bg: #009688; /* Teal, slightly darker, consistent for form buttons providing a good UI depth */
-  --text-shadow-color: #000000cc; /* Dark shadow for text, offering depth and emphasis */
-  --under-line-text: #747474; /* Medium gray for underlines, visible yet unobtrusive */
-  --background-pageB: #f0f0f0; /* Light gray for alternate section backgrounds, offering a clean and bright contrast */
-  --neon-blue: #0077ff; /* Bright blue for dynamic neon effects, adds vibrancy */
-  --neon-pink: #ff1177; /* Bright pink for neon accents, stands out for important UI elements */
-  --background-pageA: #2c2f33; /* Dark charcoal gray, lighter than the main background for subtle distinction in layered UI elements */
-  --accent-color: #787476; /* Bright pink for accentuating key interactive elements */
-  --hover-shadow-color: #c1bdbf80; /* Pink shadow with transparency for hover effects, aligns with the accent color */
+  --background-color: #1a1a2e;
+  --text-color: #e6e6e6;
+  --sidebar-hover-bg: #16213e;
+  --link-hover-color: #e94560;
+  --carousel-title-color: #0f3460;
+  --button-active-bg: #533483;
+  --form-button-bg: #907ad6;
+  --text-shadow-color: #000000;
+  --under-line-text: #c8d6e5;
+  --background-pageB: #2e4c6d;
+  --neon-blue: #219ebc;
+  --neon-pink: #ff99c8;
+  --background-pageA: #162447;
+  --accent-color: #b6c9f0;
+  --hover-shadow-color: #4d194d;
+  --arrow: white;
+  --arrow-background: #3c393980;
+  --arrow-border: #121010;
 }

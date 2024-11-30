@@ -16,16 +16,24 @@ body {
   color: var(--text-color);
 }
 .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
-  color: white;
+  font-size: 4rem;
+  color: var(--arrow);
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 60;
   text-decoration: none;
+  border: 1px solid var(--arrow-border);
+  background-color: var(--arrow-background);
+  border-radius: 50%;
 }
 
 /* @keyframes bounce {
@@ -44,28 +52,44 @@ body {
   }
 } */
 .arrowUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
   position: absolute;
-  top: 20px;
-  left: 50%;
+  top: 5rem;
+  left: 51%;
   transform: translateX(-50%);
-  font-size: 2rem;
-  color: white;
+  font-size: 4rem;
+  color: var(--arrow);
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 60;
   text-decoration: none;
+  border: 1px solid var(--arrow-border);
+  background-color: var(--arrow-background);
+  border-radius: 50%;
 }
 .arrowUpAll {
   position: fixed;
-  top: 20px;
-  left: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  top: 1rem;
+  left: 90%;
   transform: translateX(-50%);
-  font-size: 2rem;
-  color: white;
+  font-size: 4rem;
+  color: var(--arrow);
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 60;
   text-decoration: none;
+  border: 1px solid var(--arrow-border);
+  background-color: var(--arrow-background);
+  border-radius: 50%;
 }
 /* 
 @keyframes bounce {
