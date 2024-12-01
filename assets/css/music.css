@@ -6,9 +6,9 @@
   background-color: black;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0) 100%
+    var(--shadow-a) 0%,
+    var(--shadow-b) 50%,
+    var(--shadow-c) 100%
   );
   z-index: 30;
 }
@@ -21,9 +21,9 @@
   background-color: black;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0) 100%
+    var(--shadow-a) 0%,
+    var(--shadow-b) 50%,
+    var(--shadow-c) 100%
   );
   z-index: 30;
 }
@@ -31,7 +31,7 @@
 .audioSection {
   position: relative;
   height: 100%;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   width: 100%;
   overflow: hidden;
   background-color: var(--background-pageA);
@@ -57,12 +57,11 @@
 }
 
 .audioTitle {
-  font-family: "MuseoModernoBold", Arial, sans-serif;
-  color: var(--carousel-title-color);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 4px var(--text-shadow-color);
-
   padding: 4rem;
 }
 
