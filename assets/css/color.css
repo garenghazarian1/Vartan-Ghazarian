@@ -59,4 +59,16 @@
   /* --arrow: white;
   --arrow-background: #3c393980;
   --arrow-border: #121010; */
+  --shadow-a: #000000; /* Fully opaque black */
+  --shadow-b: #00000080; /* 50% transparent black */
+  --shadow-c: #00000000; /* Fully transparent black */
+  /* youtube */
+  --section-video-background: #1a1a2e;
+  --videoContainerIFrame: #00000080;
+
+  /* fancy Background youtube */
+
+  --light-background-color: rgb(255, 255, 255);
+  --light-box-shadow-color: #a10e0e;
+  --animation-float-up: floatUp;
 }

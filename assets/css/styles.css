@@ -15,6 +15,36 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+.shadowTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  background: linear-gradient(
+    to bottom,
+    var(--shadow-a) 0%,
+    var(--shadow-b) 50%,
+    var(--shadow-c) 100%
+  );
+  z-index: 30;
+}
+
+.shadowBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  background: linear-gradient(
+    to top,
+    var(--shadow-a) 0%,
+    var(--shadow-b) 50%,
+    var(--shadow-c) 100%
+  );
+  z-index: 30;
+}
 /* .arrow {
   display: flex;
   justify-content: center;

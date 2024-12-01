@@ -1,4 +1,4 @@
-.shadowTopCarousel {
+/* .shadowTopCarousel {
   position: absolute;
   top: 0;
   width: 100%;
@@ -24,7 +24,7 @@
     rgba(0, 0, 0, 0) 100%
   );
   z-index: 70;
-}
+} */
 
 .carousel-container {
   position: relative;
@@ -50,7 +50,6 @@
   text-align: center;
   text-shadow: 2px 4px 6px var(--text-shadow-color);
   padding: 5px 10px;
-  z-index: 20;
 }
 
 .carousel-titleA {
@@ -85,11 +84,10 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  z-index: 100;
   outline: none;
   width: 25%;
   height: 100%;
-  z-index: 50;
+  z-index: 20;
 }
 
 button:active {

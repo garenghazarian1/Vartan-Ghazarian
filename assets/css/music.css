@@ -31,7 +31,7 @@
 .audioSection {
   position: relative;
   height: 100%;
-  maxheight: 100vh;
+  max-height: 100vh;
   width: 100%;
   overflow: hidden;
   background-color: var(--background-pageA);
@@ -44,7 +44,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
-  z-index: 1;
 }
 
 .audioContainerA {
@@ -55,7 +54,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  z-index: 1;
 }
 
 .audioTitle {
@@ -64,7 +62,7 @@
   text-align: center;
   font-size: 2.5rem;
   text-shadow: 1px 1px 4px var(--text-shadow-color);
-  z-index: 1;
+
   padding: 4rem;
 }
 
