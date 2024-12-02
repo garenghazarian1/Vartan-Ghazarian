@@ -1,52 +1,102 @@
-.contact-section {
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 2rem;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  z-index: 80;
+  gap: 2rem;
+  background: var(--background-pageA);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
 }
 
-.contact-section h2 {
+.contact-section {
+  flex: 1 1 60%; /* Takes up 60% of the flex container */
+
+  color: var(--text-color);
+}
+
+.contact-info {
+  flex: 1 1 40%; /* Takes up 40% of the flex container */
+  background-color: var(--sidebar-hover-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2,
+.contact-info h2 {
+  padding-top: 0.5rem;
   text-align: center;
   color: var(--carousel-title-color);
-  margin-bottom: 2rem;
+}
+
+.formContainer {
+  background: var(--form-button-bg);
+  padding: 0rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 0.8rem;
-  border-radius: 0.5rem;
   border: 1px solid var(--under-line-text);
-  background-color: var(--sidebar-hover-bg);
-  color: var(--text-color);
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
 }
 
 .form-group textarea {
+  resize: vertical;
   height: 150px;
-  resize: none;
 }
 
 .submit-button-contact {
-  display: block; /* Ensures it doesn't inline or float */
-  width: auto; /* Adjusts width to content or specified width */
-  margin: 0 auto; /* Centers the button */
-  padding: 1rem;
-  background-color: var(--form-button-bg);
-  color: white;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--button-active-bg);
+  color: var(--text-color);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background-color: var(--button-active-bg);
+.submit-button-contact:hover {
+  background-color: var(--link-hover-color);
+}
+
+.contact-info a {
+  display: block;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section,
+  .contact-info {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
 }

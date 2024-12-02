@@ -71,4 +71,15 @@
   --light-background-color: rgb(255, 255, 255);
   --light-box-shadow-color: #a10e0e;
   --animation-float-up: floatUp;
+
+  /* contact */
+  --contact-bg: #2c3e50; /* Dark blue for background, great for dark themes */
+  --contact-text: #ecf0f1; /* Off-white for text, provides excellent contrast */
+  --input-bg: #34495e; /* Deeper blue for input fields to differentiate from the background */
+  --input-border: #bdc3c7; /* Light grey border for inputs, subtle and refined */
+  --input-text: #ecf0f1; /* Text color for input fields */
+  --button-bg: #16a085; /* Teal background for buttons, vibrant and inviting */
+  --button-text: #ffffff; /* White text for buttons, ensuring readability */
+  --link-color: #3498db; /* Bright blue for links, stands out and looks appealing */
+  --link-hover-color: #2980b9; /* Darker blue for hovered links, provides interactive feedback */
 }
