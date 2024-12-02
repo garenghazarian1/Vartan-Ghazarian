@@ -75,7 +75,7 @@
   opacity: 1;
 }
 
-button {
+.carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

@@ -3,6 +3,7 @@ import { loadVideoSection } from "./youtubeHtml.js";
 import { loadMusicSection } from "./musicHtml.js";
 import { setupAudioPlayers } from "./audioManager.js";
 import { toggleSidebar, closeSidebar, setupSidebarLinks } from "./sideBar.js";
+import { loadContactSection } from "./contactHtml.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   try {
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadMusicSection();
     setupAudioPlayers();
     setupSidebarLinks();
+    loadContactSection();
     const hamburger = document.querySelector(".hamburger");
 
     // Toggle sidebar on hamburger click
