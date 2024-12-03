@@ -33,3 +33,11 @@ export function setupSidebarLinks() {
     link.addEventListener("click", closeSidebar);
   });
 }
+
+// Close the sidebar when the window is scrolled
+document.addEventListener("scroll", () => {
+  const sidebar = document.querySelector(".sidebar");
+  if (sidebar.classList.contains("open")) {
+    closeSidebar();
+  }
+});

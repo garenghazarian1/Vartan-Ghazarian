@@ -1,5 +1,5 @@
 :root {
-  --sidebar-width: 15.625rem; /* 250px */
+  --sidebar-width: 8rem;
 }
 
 .sidebar {
@@ -47,7 +47,7 @@
 
 .sidebar a:hover {
   color: var(--link-hover-color);
-  background-color: var(--sidebar-hover-bg);
+  background-color: #ffffff15;
   border-radius: 1rem;
 }
 

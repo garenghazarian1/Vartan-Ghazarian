@@ -1,31 +1,3 @@
-/* .shadowTopCarousel {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 5rem;
-  background-color: black;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  z-index: 30;
-}
-.shadowBottomCarousel {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 5rem;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  z-index: 70;
-} */
-
 .carousel-container {
   position: relative;
   height: 100vh;
@@ -48,14 +20,15 @@
   font-size: 5rem;
   color: var(--carousel-title-color);
   text-align: center;
-  text-shadow: 2px 4px 6px var(--text-shadow-color);
+  text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.274);
   padding: 5px 10px;
+  background-color: rgba(25, 23, 23, 0.753);
+  border-radius: 2rem;
 }
 
 .carousel-titleA {
-  top: 74%;
+  top: 79%;
   font-size: 2rem;
-  color: var(--text-color);
 }
 
 .carousel-item {
@@ -64,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
   opacity: 0;
@@ -113,5 +86,9 @@ button:active {
 
   .carousel-titleA {
     font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    background-size: cover;
   }
 }
