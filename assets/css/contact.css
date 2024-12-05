@@ -1,50 +1,54 @@
+/* Base Setup for Flex Container */
 .flexContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 2rem;
-  gap: 2rem;
-  background: var(--background-pageA);
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 1200px;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  background: linear-gradient(
+    to left,
+    var(--contact-background-gradient-start),
+    var(--contact-background-gradient-end)
+  );
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 95%;
+  max-width: 60rem;
+  box-sizing: border-box;
 }
 
-.contact-section {
-  flex: 1 1 60%; /* Takes up 60% of the flex container */
-
-  color: var(--text-color);
-}
-
+/* Section-specific styling for contact and information areas */
+.contact-section,
 .contact-info {
-  flex: 1 1 40%; /* Takes up 40% of the flex container */
-  background-color: var(--sidebar-hover-bg);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: var(--text-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  background: var(--contact-background-semi-transparent);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  color: var(--contact-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact-section h2,
-.contact-info h2 {
-  padding-top: 0.5rem;
-  text-align: center;
-  color: var(--carousel-title-color);
+/* Typography and Spacing */
+.headText,
+.contact-info h2,
+.contact-info a {
+  margin: 0.5rem;
+  color: var(--contact-text-color);
+  font-size: 1.5rem;
 }
 
 .formContainer {
-  background: var(--form-button-bg);
-  padding: 0rem 1rem 1rem 1rem;
-  border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }
 
+/* Form styling for minimalist appeal */
 .form-group {
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
-
 .form-group label {
   font-weight: bold;
 }
@@ -52,51 +56,53 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--under-line-text);
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+
+  background-color: transparent;
+  border: 1px solid gray;
   border-radius: 0.5rem;
-  background-color: var(--background-color);
 }
 
 .form-group textarea {
-  resize: vertical;
-  height: 150px;
+  height: 7.5rem;
+  resize: none;
 }
 
+/* Button and Link Styling */
 .submit-button-contact {
-  width: 100%;
-  padding: 0.8rem;
-  background-color: var(--button-active-bg);
-  color: var(--text-color);
+  margin: 1rem;
+  padding: 0.75rem;
+  background-color: var(--contact-button-bg);
+  color: white;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .submit-button-contact:hover {
-  background-color: var(--link-hover-color);
+  background-color: var(--contact-button-hover-bg);
 }
 
 .contact-info a {
-  display: block;
-  text-align: center;
-  margin: 0.5rem 0;
-  color: var(--link-hover-color);
+  color: var(--contact-button-bg);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .flexContainer {
     flex-direction: column;
-    align-items: center;
   }
 
   .contact-section,
   .contact-info {
-    flex: 1 1 100%; /* Full width on small screens */
+    width: 100%;
   }
 }

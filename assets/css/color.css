@@ -73,13 +73,11 @@
   --animation-float-up: floatUp;
 
   /* contact */
-  --contact-bg: #2c3e50; /* Dark blue for background, great for dark themes */
-  --contact-text: #ecf0f1; /* Off-white for text, provides excellent contrast */
-  --input-bg: #34495e; /* Deeper blue for input fields to differentiate from the background */
-  --input-border: #bdc3c7; /* Light grey border for inputs, subtle and refined */
-  --input-text: #ecf0f1; /* Text color for input fields */
-  --button-bg: #16a085; /* Teal background for buttons, vibrant and inviting */
-  --button-text: #ffffff; /* White text for buttons, ensuring readability */
-  --link-color: #3498db; /* Bright blue for links, stands out and looks appealing */
-  --link-hover-color: #2980b9; /* Darker blue for hovered links, provides interactive feedback */
+  --contact-background-gradient-start: #211e46; /* Light blue */
+  --contact-background-gradient-end: #0d0a17; /* Dark blue */
+  --contact-background-semi-transparent: #e1e3e725; /* Semi-transparent white */
+  --contact-text-color: #e0e4e7; /* Deep blue for text */
+  --contact-border-color: #ccc; /* Light gray for minimalist underline */
+  --contact-button-bg: #768387; /* Dark blue for button */
+  --contact-button-hover-bg: #6dd5ed; /* Light blue for button hover */
 }
