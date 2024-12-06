@@ -109,7 +109,7 @@
 
 /* socialmedia */
 
-.social-media-links {
+/* .social-media-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,11 +118,71 @@
 
 .social-icon {
   margin: 0 10px;
-  color: var(--text-color); /* Assuming there's a CSS variable for text color */
-  font-size: 2rem; /* Adjust size as needed */
+  color: var(--text-color); 
+  font-size: 2rem; 
   transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-  color: var(--link-hover-color); /* Adjust hover color */
+  color: var(--link-hover-color); 
+} */
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.social-icon {
+  margin: 0 15px; /* Adjust spacing */
+  font-size: 2rem; /* Icon size */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.social-icon i {
+  color: #000; /* Default color if needed */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Specific brand colors */
+.social-icon .fa-facebook-f {
+  color: #1877f2; /* Facebook blue */
+}
+
+.social-icon .fa-instagram {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    radial-gradient(
+      ellipse farthest-corner at 60% 50%,
+      #d9317a,
+      transparent 50%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text transparent, showing the background */
+}
+
+.social-icon .fa-tiktok {
+  color: #000000; /* TikTok black */
 }
