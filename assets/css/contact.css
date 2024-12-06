@@ -106,3 +106,23 @@
     width: 100%;
   }
 }
+
+/* socialmedia */
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: var(--text-color); /* Assuming there's a CSS variable for text color */
+  font-size: 2rem; /* Adjust size as needed */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--link-hover-color); /* Adjust hover color */
+}
